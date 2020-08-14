@@ -55,7 +55,7 @@ function drawScore() {
 }
 
 function checkCollition() {
-  if (flappy.y > $canvas.height - flappy.height) {
+  if (flappy.y > $canvas.height - flappy.height || flappy.y < 0) {
     gameOver()
   }
   obstacles.forEach(obstacle => {
